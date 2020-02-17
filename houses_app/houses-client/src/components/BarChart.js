@@ -27,14 +27,14 @@ class BarChart extends Component {
                 {
                     label: 'Sold Price',
                     data: [],
+                    fill: false,
                     lineTension: 0,
-                    borderColor: 'rgb(0, 0, 0)',
-                    // backgroundColor: 'rgb(173, 216, 230)'
-
+                    borderColor: 'rgb(0, 0, 0)'
                 },
                 {
                     label: 'Listed Price',
                     data: [],
+                    fill: false,
                     borderColor: 'rgb(173, 216, 230)'
                 }
             ]
@@ -60,6 +60,15 @@ class BarChart extends Component {
         return (
         <>
             <h1>History of Home Sold Price</h1>
+            <form>
+                <label>House One New Listed Price: </label>
+                <input type='text' /> <br></br>
+                <label>House One New Sold Price: </label>
+                <input type='text' /> <br></br>
+                <input type='submit' />
+            </form>
+            <br></br>
+
             <canvas id="houses" width="300" height="100"></canvas>
         </>
         )
