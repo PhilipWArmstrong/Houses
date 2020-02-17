@@ -1167,3 +1167,63 @@ Processing by HousesController#show as */*
 Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 1.4ms | Allocations: 1740)
 
 
+Started GET "/houses/1" for ::1 at 2020-02-16 20:20:34 -0600
+Processing by HousesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (1.9ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:19:in `set_house'
+  [1m[36mListed Load (0.9ms)[0m  [1m[34mSELECT "listeds".* FROM "listeds" WHERE "listeds"."house_id" = $1[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:13:in `show'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 3.2ms | Allocations: 1863)
+
+
+Started GET "/houses/1" for ::1 at 2020-02-16 20:21:38 -0600
+Processing by HousesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:19:in `set_house'
+  [1m[36mListed Load (0.2ms)[0m  [1m[34mSELECT "listeds".* FROM "listeds" WHERE "listeds"."house_id" = $1[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:13:in `show'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 1740)
+
+
+Started GET "/houses/1" for ::1 at 2020-02-16 20:22:22 -0600
+Processing by HousesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.6ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:19:in `set_house'
+  [1m[36mListed Load (1.4ms)[0m  [1m[34mSELECT "listeds".* FROM "listeds" WHERE "listeds"."house_id" = $1[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:13:in `show'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 2.0ms | Allocations: 1740)
+
+
+Started GET "/houses/1" for ::1 at 2020-02-16 20:22:52 -0600
+Processing by HousesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:19:in `set_house'
+  [1m[36mListed Load (0.3ms)[0m  [1m[34mSELECT "listeds".* FROM "listeds" WHERE "listeds"."house_id" = $1[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:13:in `show'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 1740)
+
+
+Started GET "/houses/1" for ::1 at 2020-02-16 20:23:24 -0600
+Processing by HousesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.5ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:19:in `set_house'
+  [1m[36mListed Load (4.9ms)[0m  [1m[34mSELECT "listeds".* FROM "listeds" WHERE "listeds"."house_id" = $1[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:13:in `show'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 5.4ms | Allocations: 1740)
+
+
+Started GET "/houses/1" for ::1 at 2020-02-16 20:24:00 -0600
+Processing by HousesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.5ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:19:in `set_house'
+  [1m[36mListed Load (0.6ms)[0m  [1m[34mSELECT "listeds".* FROM "listeds" WHERE "listeds"."house_id" = $1[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:13:in `show'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 1740)
+
+

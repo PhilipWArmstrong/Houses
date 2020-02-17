@@ -27,11 +27,15 @@ class BarChart extends Component {
                 {
                     label: 'Sold Price',
                     data: [],
-                    lineTension: 0
+                    lineTension: 0,
+                    borderColor: 'rgb(0, 0, 0)',
+                    // backgroundColor: 'rgb(173, 216, 230)'
+
                 },
                 {
                     label: 'Listed Price',
-                    data: []
+                    data: [],
+                    borderColor: 'rgb(173, 216, 230)'
                 }
             ]
         }
@@ -55,7 +59,7 @@ class BarChart extends Component {
     render () {
         return (
         <>
-            <h1>History of Home Sales</h1>
+            <h1>History of Home Sold Price</h1>
             <canvas id="houses" width="300" height="100"></canvas>
         </>
         )
